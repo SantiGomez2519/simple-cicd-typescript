@@ -30,7 +30,7 @@ El proyecto incluye configuraciones listas para ejecutar:
 
 ## 👤 Autor
 
-- Santiago Gómez Ospina
+Santiago Gómez Ospina
 
 ---
 
