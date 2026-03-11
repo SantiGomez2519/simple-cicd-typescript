@@ -17,6 +17,7 @@
     <button type="button" id="btnDivide">Divide</button>
   </div>
 
+  <p>Operation: <strong id="operation">—</strong></p>
   <p>Result: <strong id="result">—</strong></p>
 
   <!-- Link to the compiled JS files (compile each .ts with: tsc <file>.ts) -->
@@ -29,6 +30,7 @@
       var num1Input = document.getElementById('num1');
       var num2Input = document.getElementById('num2');
       var resultElement = document.getElementById('result');
+      var operationElement = document.getElementById('operation');
 
       function getValues() {
         var a = Number(num1Input.value) || 0;
@@ -39,24 +41,29 @@
       document.getElementById('btnSum').addEventListener('click', function () {
         var values = getValues();
         resultElement.textContent = window.sum(values.a, values.b);
+        operationElement.textContent = 'Sum';
       });
 
       document.getElementById('btnSubstract').addEventListener('click', function () {
         var values = getValues();
         resultElement.textContent = window.substract(values.a, values.b);
+        operationElement.textContent = 'Substract';
       });
 
       document.getElementById('btnMultiply').addEventListener('click', function () {
         var values = getValues();
         resultElement.textContent = window.multiply(values.a, values.b);
+        operationElement.textContent = 'Multiply';
       });
 
       document.getElementById('btnDivide').addEventListener('click', function () {
         var values = getValues();
         try {
           resultElement.textContent = window.divide(values.a, values.b);
+          operationElement.textContent = 'Divide';
         } catch (e) {
           resultElement.textContent = 'Error: ' + (e && e.message ? e.message : 'Invalid division');
+          operationElement.textContent = 'Error';
         }
       });
     })();
