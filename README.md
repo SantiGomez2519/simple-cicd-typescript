@@ -28,6 +28,12 @@ El proyecto incluye configuraciones listas para ejecutar:
 
 ---
 
+## 👤 Autor
+
+- Santiago Gómez Ospina
+
+---
+
 ## 📂 Estructura del proyecto
 
 ```text
