@@ -1,6 +1,6 @@
 /**
  * Unit tests for substract()
- * Loads the compiled sum.js so window.sum is available (same as in the browser).
+ * Loads the compiled substract.js so window.substract is available (same as in the browser).
  */
 declare global {
     interface Window {
@@ -9,7 +9,7 @@ declare global {
   }
   
   beforeAll(() => {
-    // Load the built script that attaches sum to window (non-module)
+    // Load the built script that attaches substract to window (non-module)
     // eslint-disable-next-line @typescript-eslint/no-require-imports
     require("./substract.js");
   });
